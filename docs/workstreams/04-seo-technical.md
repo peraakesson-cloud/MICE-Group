@@ -1,6 +1,6 @@
 # 04 - Technical SEO, site architecture, Core Web Vitals, structured data and migration risk for sydafrikaresor.se
 
-Status: Draft v1 for CEO review | Prepared 2026-11-02 | Owner role: SEO/Web lead (accountable), with Web developer (agency or in-house), Analytics lead, Head of Marketing
+Status: Draft v2 (independent review applied 2026-11-03) for CEO review | Prepared 2026-11-02 | Owner role: SEO/Web lead (accountable), with Web developer (agency or in-house), Analytics lead, Head of Marketing
 Inherits: /docs/00-strategy.md (lever L4 SEO/content/AI-search: +0.2 MSEK in 2027, +1.5 MSEK in 2028, evidence grade B; SEO and content line SEK 0.10 M Q4 2026, 0.70 M 2027, 0.80 M 2028; technology builds line 0.6 M 2027, 0.3 M 2028 "to be quoted"; hubs live by 31 Jan 2027; Gate 0 on 15 Dec 2026). Content strategy (what to write) is the sibling SEO-content workstream. This plan owns the container: crawlability, indexation, architecture, speed, markup, measurement integrity and the safety of any change to the site.
 Evidence tags: R01-R12 = /docs/research files; RT-D/S/E = /docs/review files; [A#] = strategy assumption register; [OBSERVED] = fetched from sydafrikaresor.se on 2026-11-02 for this plan; [ASSUMPTION-T#] = introduced here (section 13). We have no internal data: GSC, GA4, server logs and hosting details are all unseen. Plans in English, customer-facing copy (page titles, schema text) in Swedish.
 
@@ -18,12 +18,12 @@ Out of scope: editorial plan and copy (content workstream), link building/PR (So
 | O1 | Establish a trustworthy baseline: GSC (16 months), GA4, crawl, CrUX, log sample, all stored in one dashboard | Baseline pack delivered; branded vs non-brand split known | 15 Dec 2026 (Gate 0) | Gate 0; R06 s9 |
 | O2 | Zero unplanned loss of head-term rankings ("resa till Sydafrika", "rundresa Sydafrika", "familjeresa Sydafrika", FAQ cluster) | No more than 1 position drop sustained over 14 days on the 25 protected head keywords, any release | Continuous from 1 Dec 2026 | L4 protects existing flow, not only new |
 | O3 | Index health of every money page | 100% of canonical product, destination and hub pages indexed; "Crawled - not indexed" and "Discovered - not indexed" below 5% of submitted URLs [ASSUMPTION-T1] | 31 Jan 2027 | Hubs live before Jan-Feb peak |
-| O4 | Core Web Vitals pass on mobile for the templates that earn and convert | At least 90% of URLs in each template group rated "Good" for LCP, INP and CLS in GSC/CrUX (Google thresholds: LCP 2.5 s, INP 200 ms, CLS 0.1) [ASSUMPTION-T2 on the 90% share] | 31 Mar 2027 (Gate 1) | Conversion and rank |
+| O4 | Core Web Vitals pass on mobile for the templates that earn and convert | At least 90% of URLs in each template group rated "Good" for LCP, INP and CLS in GSC/CrUX (Google thresholds: LCP 2.5 s, INP 200 ms, CLS 0.1) [ASSUMPTION-T2 on the 90% share] | 31 Mar 2027 (plan milestone and Gate 1 evidence; CWV is not a strategy Gate 1 pass condition) | Conversion and rank |
 | O5 | Architecture supports the content programme without cannibalisation | Agreed URL taxonomy, canonical rules and internal-link templates signed off before the first 6 hubs publish | 30 Nov 2026 | First 6 hubs by 31 Dec 2026 |
 | O6 | Structured data valid and useful, not decorative | 100% of eligible templates validate with zero errors; no markup that is not visible on the page | 28 Feb 2027 | R06 s7 item 11 |
 | O7 | Organic enquiries and bookings measured to value and margin | Organic landing page to enquiry to booking joined in CRM; offline conversion import live | 31 Jan 2027 (with tracking v2) | Section 11 of strategy; north star |
 | O8 | No migration-class incident | Every release with SEO risk passes the release checklist (section 9); zero un-redirected URL deletions | Continuous | Risk R-T1 |
-| O9 | Organic non-brand enquiries trending to what L4 needs | Target set after baseline: see KPI table (section 11); placeholder +25% non-brand organic enquiries H2 2027 vs H2 2026 [ASSUMPTION-T3] | Read 31 Dec 2027 | L4 +0.2 (2027), +1.5 (2028) |
+| O9 | Organic non-brand enquiries trending to what L4 needs | Bridge-implied increment of about 14 enquiries in 2027 and about 105-115 in 2028 (section 11.3, derived from the strategy bridge); % target set after baseline, placeholder +25% on the same months of 2026 [ASSUMPTION-T3] | Read 31 Dec 2027 | L4 +0.2 (2027), +1.5 (2028) |
 
 ---
 
@@ -77,7 +77,7 @@ The principle is a four-level hub-and-spoke model that mirrors how Swedes search
 | Level | Purpose | Example URL pattern (Swedish, lower case, hyphens) | Template |
 |---|---|---|---|
 | L0 Home | Brand, trust, entry to all hubs | `/` | Home |
-| L1 Commercial hubs | Money clusters 2, 3, 4, 8 | `/rundresor/`, `/reseforslag/` (individually tailored), `/safari-sydafrika/`, `/kapstaden/`, `/garden-route/`, `/teman/familjeresa/`, `/teman/bröllopsresa/` (use ASCII-safe slug: `/teman/brollopsresa/`) | Hub with filters pre-rendered as static sections |
+| L1 Commercial hubs | Money clusters 2, 3, 4, 8 | `/rundresor/`, `/reseforslag/` (individually tailored), `/safari-sydafrika/`, `/kapstaden/`, `/garden-route/`, `/teman/familjeresa/`, `/teman/brollopsresa/` | Hub with filters pre-rendered as static sections |
 | L1 Guide hubs | Informational clusters 5, 6, 7, 10 | `/guide/basta-tiden-att-resa-till-sydafrika/`, `/guide/vad-kostar-en-resa-till-sydafrika/`, `/guide/ar-sydafrika-sakert/`, `/guide/sydafrika-pa-egen-hand-eller-rundresa/` | Long-form guide |
 | L2 Spokes | Month, region, itinerary, activity pages | `/guide/basta-tiden-att-resa-till-sydafrika/januari/`, `/resor/sydafrika-14-dagar/` | Guide / itinerary |
 | L3 Product | The bookable thing | `/rundresor/<slug>/`, `/reseforslag/<slug>/`, `/utflykter/<destination>/<slug>/`, `/boenden/<slug>/` | Product |
@@ -93,7 +93,7 @@ Rules:
 ### 4.2 Internal linking templates
 | Link block | Where | Rule |
 |---|---|---|
-| "Passar dig om du vill..." contextual module | Every guide spoke | At least 2 links to relevant L1 commercial hubs and 1 to a specific product, descriptive anchors, no "klicka här" |
+| "Passar dig som vill ..." contextual module | Every guide spoke | At least 2 links to relevant L1 commercial hubs and 1 to a specific product, descriptive anchors, no "klicka här" |
 | "Bokningsbara resor" strip | Every guide hub and destination page | Programmatic: 3-6 products tagged to the page's region/theme, ordered by order-book margin or availability, not alphabetically [ASSUMPTION-T4 that tags exist] |
 | "Läs mer" strip | Every product page | 3 relevant guide links (best time, safety, cost) so product pages inherit informational authority |
 | Month picker and region picker | Best-time hub | Crawlable `<a href>` links, not JavaScript-only widgets |
@@ -109,7 +109,7 @@ Rules:
 1. Build a URL x primary-query x intent matrix from GSC and the crawl; flag any query for which two or more URLs get impressions.
 2. For each collision decide: consolidate (301 into the stronger, merge content), differentiate (distinct intent, rewrite title/H1/lead), or canonicalise (duplicate boilerplate such as tour variants).
 3. Templated boilerplate (terms, practical info repeated on 100+ pages) moves into collapsible shared blocks; unique text above the fold must be at least 250 words on every indexable product page [ASSUMPTION-T5].
-4. Expired departures and withdrawn products: if the tour is permanently gone, 301 to the nearest relevant hub; if seasonal, keep live with "nästa avgång" or "ej bokningsbar just nu"; never leave a 200 page with no bookable content, never return soft-404s. 410 only for content with no logical successor.
+4. Expired departures and withdrawn products: if the tour is permanently gone, 301 to the nearest relevant hub; if seasonal, keep live with "Nästa avgång: [datum]" or "Går inte att boka just nu"; never leave a 200 page with no bookable content, never return soft-404s. 410 only for content with no logical successor.
 
 ### 4.5 Pricing and availability consistency
 Prices shown on pages, in schema, in feeds and in ads must match (Konsumentverket: advertised prices must include mandatory costs, R08/R09). Rule: one price source of truth; structured-data price fields are populated from it or omitted. "Från" prices must state whether flights are included (unknown today, R06). This is a legal and an SEO consistency issue and is owned jointly with Legal/Ops.
@@ -138,7 +138,7 @@ Prices shown on pages, in schema, in feeds and in ads must match (Konsumentverke
 | CLS | at most 0.1 | at most 0.05 |
 | TTFB (supporting) | n/a | at most 0.8 s at the 75th percentile [ASSUMPTION-T6] |
 
-Templates measured separately: Home, Commercial hub, Guide, Product (rundresa/reseförslag), Utflykt, Trust (stories, bios), Quote form page. Source of truth is field data (CrUX, GSC CWV report, a RUM script); lab data (Lighthouse, WebPageTest) is for diagnosis only. Swedish mobile networks are fast, so the main cost is JavaScript, third-party tags and image weight, not bandwidth.
+Templates measured separately: Home, Commercial hub, Guide, Product (rundresa/reseförslag), Utflykt, Trust (stories, bios), Quote form page. Source of truth is field data (CrUX, GSC CWV report, a RUM script); lab data (Lighthouse, WebPageTest) is for diagnosis only. Hypothesis [ASSUMPTION-T17]: with good Swedish mobile coverage the main cost is likely JavaScript, third-party tags and image weight rather than bandwidth; the baseline must confirm this.
 
 ### 5.2 Likely issues to test first (hypotheses from the observed stack)
 | Hypothesis | Test | Fix if confirmed |
@@ -166,9 +166,9 @@ Principles: markup must match visible content; no review or rating markup unless
 
 | Template | Schema types | Notes | Rich result likely? |
 |---|---|---|---|
-| Sitewide | Organization (existing), WebSite (existing), BreadcrumbList (existing on home; extend everywhere) | Organization: logo, `sameAs` (Trustpilot, Facebook, Instagram, YouTube, LinkedIn), contact points, `foundingDate` 2003 only if the company confirms. Add `identifier`/membership (Svenska Resebyråföreningen) only if verified | Knowledge panel signals, breadcrumbs |
+| Sitewide | Organization (existing), WebSite (existing), BreadcrumbList (existing on home; extend everywhere) | Organization: logo, `sameAs` (Trustpilot, Facebook, Instagram, YouTube, LinkedIn: only profiles that exist and are verified as the company's), contact points, `foundingDate` 2003 only if the company confirms. Add `identifier`/membership (Svenska Resebyråföreningen) only if verified | Knowledge panel signals, breadcrumbs |
 | Product page (rundresa, reseförslag) | `TouristTrip` with `itinerary`, `touristType`, plus `Offer` (price, currency SEK, availability, `validFrom`/`priceValidUntil` only where real) | `TouristTrip` has no Google rich result, but it is understood by search and AI systems. Use `Product` markup only if price and availability are accurate and there is an actual review/aggregate on the page; otherwise stay with TouristTrip + Offer | Low, but helps entity understanding |
-| Utflykt (excursion) | `TouristAttraction` or `Event`-free `Product`/`Offer` | Keep simple; price "from" must be real | Low |
+| Utflykt (excursion) | `TouristAttraction` for the place; `Product` + `Offer` only if price and availability are accurate | Keep simple; "från" price must be real and tied to the price source (4.5) | Low |
 | Boende | `LodgingBusiness`/`Hotel` pointing to the lodge | Do not copy third-party ratings; link to the lodge | Low |
 | Guide / hub articles | `Article` or `BlogPosting` with `author` (Person with bio URL), `datePublished`, `dateModified`, `publisher` | Named expert authors tied to resespecialister pages support trust (R08: trust is brokered by people) | Author/article eligibility |
 | Best-time and practical pages | `Article` + visible FAQ block | `FAQPage` rich results are no longer shown for most commercial sites (Google restricted them in 2023); still useful as on-page structure and for AI answer extraction, but expect no SERP feature [ASSUMPTION-T8, re-verify in Google documentation before relying] | None expected |
@@ -194,9 +194,23 @@ Governance: schema is part of the template spec; a validation run is part of eve
 | Rendering | Confirm all critical content (itineraries, prices, links, reviews) is in initial HTML; client-rendered widgets (calendars, tabs, accordions) keep text in the DOM at load | Web dev | 15 Dec 2026 |
 | Meta templates | Title/description formulas per template with Swedish copy rules (title at most about 60 characters, unique, includes year where useful on seasonal pages); remove duplicate or empty meta | SEO lead | 31 Dec 2026 |
 | Images | ALT text from a rule (product + place + subject), never keyword-stuffed; descriptive file names for new images; consistent aspect ratios to prevent CLS | SEO lead + content | 31 Jan 2027 |
-| Pagination, filters, search | Rules of section 4.3 implemented | Web dev | 31 Jan 2027 |
+| Search/filter `noindex, follow` (4.3, quick fix) | Implemented and verified on staging, then production | Web dev | 15 Dec 2026 (before the freeze) |
+| Pagination, departure-calendar and remaining 4.3 rules | Implemented | Web dev | 31 Jan 2027 (Medium risk, staged) |
 | Security headers | HTTPS everywhere, no mixed content, HSTS, no `X-Robots-Tag` mistakes | Web dev | 31 Jan 2027 |
-| Bing | Verify Bing Webmaster Tools and IndexNow (instant notification of new/changed URLs); Bing UET already present | SEO lead | 31 Dec 2026 |
+| Bing | Verify Bing Webmaster Tools and IndexNow (instant notification of new/changed URLs to Bing and other participating engines; Google does not use IndexNow, so Google relies on sitemaps and URL Inspection); Bing UET already present | SEO lead | 31 Dec 2026 |
+
+### 7.1 Swedish title, H1 and meta formulas (draft copy for Content lead and Legal/Ops approval)
+Titles at most about 60 characters, meta descriptions at most about 155. No unsupported superlatives ("störst", "bäst") and no safety guarantees; prices only from the price source (4.5) and dated. Figures in brackets are filled from real data.
+
+| Template | Title | Meta description |
+|---|---|---|
+| Best-time hub | Bästa tiden att resa till Sydafrika, månad för månad | Väder, säsong och vad som händer i Kapstaden, Kruger och längs Garden Route varje månad. Få råd av en specialist på Sydafrika. |
+| Cost guide | Vad kostar en resa till Sydafrika? Prisexempel | Prisexempel från våra egna resor, vad som ingår och vad du bör budgetera extra. Priser uppdaterade [månad år]. |
+| Safety and practical hub | Är Sydafrika säkert? Fakta och praktiska råd | Fakta om säkerhet i Sydafrika med länkar till UD:s reseinformation, och hur vi planerar för trygghet på våra resor. |
+| Rundresa (product) | [Resans namn]: [X] dagar i Sydafrika | [X] dagar med [höjdpunkter]. Pris från [X] kr per person, [flyg ingår / flyg ingår inte]. Personlig rådgivare och resegaranti. |
+| Segment page | Familjeresa till Sydafrika: [X] förslag | Familjevänliga safariupplevelser och rundresor i Sydafrika, anpassade efter barnens ålder. Prata med en av våra rådgivare. |
+
+Each product meta description must state whether flights are included (open question O-2) and may mention resegaranti only after Legal/Ops confirms the wording (strategy pillar 4).
 
 ---
 
@@ -205,10 +219,10 @@ Governance: schema is part of the template spec; a validation run is part of eve
 Strategy L4 includes "AI-search visibility". Evidence on what moves citation in AI answers is thin and changes quickly; the plan sticks to measures that also help classic SEO, and measures outcomes rather than assuming them. [ASSUMPTION-T10: AI-search referral volume to this site is small today; measure before investing beyond the items below.]
 
 1. **Allow, do not accidentally block.** Keep robots.txt open to mainstream search and AI-search crawlers unless the CEO decides otherwise on content-licensing grounds. Document the decision (policy owner: Head of Marketing).
-2. **Answer-first page design.** Each guide opens with a 40-80 word direct answer (best time, cost range, safety statement with link to Swedenabroad), then detail. Cost pages show real price ranges from own packages, dated and flagged "pris från" with what is included.
+2. **Answer-first page design.** Each guide opens with a 40-80 word direct answer (best time, cost range, safety statement with link to Swedenabroad), then detail. Cost pages show real price ranges from own packages, dated and flagged "Pris från" with what is included.
 3. **Entity clarity.** Consistent company name, address, phone and founding facts across Organization schema, GBP, Trustpilot, LinkedIn, Wikipedia-style sources where applicable. "Skandinaviens största" type claims require proof (Konsumentverket; workstream 01) and are not placed in schema until verified.
 4. **Freshness.** `dateModified` reflects real edits; annual review of price and season facts; changelog line on cost and safety guides ("Uppdaterad november 2026").
-5. **Citable facts.** Cite official sources (SAT, Swedenabroad/UD, SMHI-equivalent weather data for SA) with links; AI systems and Google value verifiable pages. Competitors' unlinked blog claims are the gap.
+5. **Citable facts.** Cite official sources (SAT, Swedenabroad/UD, South African Weather Service climate data) with links; Verifiable, sourced pages are the best available bet for both classic and AI search, though how AI systems weigh citations is not proven. Hypothesis [ASSUMPTION-T18]: competitor guides cite sources less consistently than we can; verify in the competitor content audit (R06 action 5).
 6. **llms.txt.** Optional file; no demonstrated effect on rankings or citations at the time of writing [ASSUMPTION-T11]. Low cost (under 2 hours); do it only after the rest, with no promise of impact.
 7. **Measurement.** Monthly manual and tool-based check of 40 priority prompts (Swedish) across Google AI Overviews, ChatGPT, Perplexity, Copilot: is sydafrikaresor.se cited or named; log in the dashboard. GA4 channel group for AI referrers (chatgpt.com, perplexity.ai, copilot.microsoft.com, gemini.google.com) created by 31 Jan 2027.
 
@@ -228,7 +242,7 @@ Three changes are already planned that touch the site: budget-bracket quote form
 | 4 | Redirect map tested: every changed/removed URL returns a single 301 to its successor; no chains, no loops, no redirect to homepage as a catch-all | Web dev |
 | 5 | Performance budget check on staging (section 5.3); form and tag firing test with consent states (granted/denied) | Web dev + Analytics |
 | 6 | Staging is not indexable; production robots.txt and meta robots verified before switch (the classic launch failure is a leftover `noindex` or `Disallow: /`) | Web dev |
-| 7 | Release timing rule: High-risk changes avoided from 15 Dec to 15 Mar and in the school-holiday windows (Easter, Christmas) unless the CEO signs an exception; best windows are late Mar-Jun and Sep-Oct (but avoid the Sep-Oct content-indexing push) [ASSUMPTION-T12] | Programme owner |
+| 7 | Release timing rule: High-risk changes avoided from 15 Dec to 15 Mar and in the school-holiday windows (Easter, Christmas) unless the CEO signs an exception; best window is late Mar-Jun (Sep-Oct is avoided for High-risk changes because of the content-indexing push). Tracking v2 is planned for Jan 2027, inside the freeze: replacing the consent tool is High risk and needs a CEO exception; configuring Consent Mode v2 and server-side tagging on the existing consent plugin is Medium and may proceed staged, with old and new tracking in parallel [ASSUMPTION-T12] | Programme owner |
 | 8 | Post-release: GSC sitemap resubmit, URL inspection of 20 key pages, 24-hour and 7-day crawl, rank and traffic compared to snapshot; rollback trigger: more than 20% drop in organic clicks to the top 100 URLs over 7 days not explained by seasonality, or any 5xx/robots error | SEO lead |
 | 9 | Rollback plan documented and tested before release (database + files backup, DNS/host switch) | Web dev |
 
@@ -263,7 +277,7 @@ GL1 (Norway, Denmark, Finland) needs a scope decision by 31 Mar 2027 (strategy).
 | Subdomains | Mixed signals; no advantage over subfolders | Medium | Not recommended |
 | English only for all Nordics | Poor intent match | Low | Not recommended |
 
-Rules: Swedish stays at the root; hreflang annotated bidirectionally (`sv-SE`, `nb-NO`, `da-DK`, `fi-FI`) plus `x-default`; no automatic redirect by IP (breaks crawling and users); prices in local currency with their own legal terms (package-travel and guarantee regimes differ per country; Legal confirms). Keyword demand for Norway and Denmark (SA arrivals 14,632 and 19,547 in 2025, R06) is smaller than Sweden's 27,625, so the first step is a demand test with a small paid and organic page set, not a site build. Budget: none until the decision; draft estimate in section 12 is a placeholder.
+Rules: Swedish stays at the root; hreflang annotated bidirectionally (`sv-SE`, `nb-NO`, `da-DK`, `fi-FI`) plus `x-default`; no automatic redirect by IP (breaks crawling and users); prices in local currency with their own legal terms (package-travel and guarantee regimes differ per country; Legal confirms). Norwegian and Danish arrivals to South Africa (14,632 and 19,547 in 2025, R06) are smaller than Sweden's 27,625; search demand in those languages is not measured, so the first step is a demand test with a small paid and organic page set, not a site build. Budget: none until the decision; draft estimate in section 12 is a placeholder.
 
 ---
 
@@ -283,12 +297,18 @@ Baselines are unknown and set by 15 Dec 2026; all targets below are [ASSUMPTION-
 
 | KPI | Definition | Baseline | Target 31 Mar 2027 | Target 31 Dec 2027 | Target 31 Dec 2028 | Owner |
 |---|---|---|---|---|---|---|
-| Organic non-brand enquiries per month | CRM enquiries whose first or assisted touch is organic search, non-brand landing | GSC/GA4/CRM by 15 Dec 2026 | Baseline set | +25% vs same period 2026 H2 | +60% vs 2026 H2 [ASSUMPTION-T3; sized to L4 +1.5 MSEK, see 11.3] | SEO lead |
+| Organic non-brand enquiries per month | CRM enquiries whose first or assisted touch is organic search on a non-brand landing page (brand-organic belongs to existing flow, not L4) | GSC/GA4/CRM by 15 Dec 2026 | Baseline set | Bridge-implied: about 14 extra enquiries in 2027 (about 1 per month). Placeholder +25% vs same months of 2026 [T3], re-based after Gate 0 | Bridge-implied: about 105-115 extra enquiries in 2028 (see 11.3). Placeholder +60% vs same months of 2026 [T3], not sized to the bridge until baseline exists | SEO lead |
 | Organic-sourced booked value and order-book margin | Booked turnover and gross margin from organic-first or organic-assisted enquiries | Unknown | Reported monthly | Reported; margin at or above book average | idem | Analytics lead |
-| Organic share of enquiries that book at 25-27% close | Close rate organic vs total | Unknown | Tracked | Within 3 points of total | Within 3 points | Head of Sales |
+| Close rate of organic enquiries | Quote-to-booking, split brand-organic (existing flow, strategy 27%) and non-brand-organic (new traffic, strategy 18%, A10) | Unknown | Tracked | Brand-organic within 3 points of 27%; non-brand at least 18% | idem | Head of Sales |
 | Non-brand clicks (GSC) | Clicks excluding brand queries | GSC export | Baseline | +30% | +70% | SEO lead |
 | Head-term protection | Positions of 25 protected keywords | Rank tracker | Not worse than baseline | Not worse | Not worse | SEO lead |
 | Cluster visibility | Share of top-3 positions for clusters 3, 4, 5, 6, 7 | Rank tracker | Baseline | Top-3 on 40% of tracked cluster keywords [ASSUMPTION-T13] | 55% | SEO lead |
+| Non-brand organic sessions | GA4 sessions on non-brand landing pages | GA4 by 15 Dec 2026 | Baseline | Set at Gate 0; must fit the strategy 3.2 requirement of about 134-223k qualified sessions across all channels in 2028 | idem | Analytics lead |
+| Organic visitor-to-enquiry rate | Enquiries / sessions, non-brand landing pages | Unknown | Baseline | Within strategy range 1.5-2.5% [A] | idem | Analytics lead |
+| Brand-search clicks (protect) | GSC brand query clicks; read with the Tranche A brand-pause holdout (strategy 11.2) so organic and paid brand are not double-counted | GSC | Not worse than baseline | Not worse | Not worse | SEO lead |
+| Time to index for new hubs | Median days from publish to "Indexed" in GSC | Unknown | At most 7 days [T13] | At most 7 days | At most 7 days | SEO lead |
+| Crawl health | Internal 4xx/5xx links, redirect chains over 1 hop, orphan money pages | Crawl by 20 Nov 2026 | 0 chains, 0 orphan money pages | 0 / 0 | 0 / 0 | Web dev |
+| AI-search citation share | Share of the 40 priority Swedish prompts (section 8 item 7) where sydafrikaresor.se is cited or named | Measured from Feb 2027 | Baseline | Trend reported | Trend reported | SEO lead |
 | Indexed canonical URLs / submitted | GSC | Unknown | at least 95% | at least 95% | at least 95% | Web dev |
 | CWV "Good" URL share (mobile) per template | GSC / CrUX | Unknown | at least 90% | at least 90% | at least 90% | Web dev |
 | Mobile LCP (p75) on hubs | CrUX | Unknown | at most 2.5 s | at most 2.2 s | at most 2.2 s | Web dev |
@@ -298,7 +318,11 @@ Baselines are unknown and set by 15 Dec 2026; all targets below are [ASSUMPTION-
 | Review snippet readiness | Trustpilot score/volume (workstream 01 target 4.5 at Gate 1) | 2.7 / 8 reviews (R03) | See WS01 | See WS01 | See WS01 | CRM manager |
 
 ### 11.3 Sanity link to the bridge
-L4 is +0.2 MSEK in 2027 and +1.5 MSEK in 2028 at 20% margin [A7], i.e. about 0.04 MSEK and 0.30 MSEK of gross profit. At SEK 90-100k per booking (2.2 travellers x 42-46k per traveller, A1) the 2028 figure equals about 15 additional bookings net of overlap, or roughly 60-85 additional organic-sourced enquiries at an 18% new-traffic close rate (strategy A10). That small number is the honest size of the SEO prize in the bridge: the cost of technical work (section 12) must stay in proportion, and the more valuable job of this workstream is protecting the existing organic flow inside the 2,148 enquiries and the #1 head terms, plus enabling the measurement that lets paid Tranche B be judged against organic.
+L4 is +0.2 MSEK in 2027 and +1.5 MSEK in 2028 at 20% margin [A7], i.e. about 0.04 MSEK and 0.30 MSEK of gross profit. At SEK 90-101k per booking (2.2 travellers x 42-46k per traveller; the strategy uses about SEK 101k in 2028) the 2028 figure equals about 15-17 additional bookings net of overlap. At the strategy's 80% quote rate and 18% new-traffic close rate (A10) that is roughly 105-115 additional organic enquiries a year (about 85-95 quotes). The 2027 figure is about 2 bookings, roughly 14 enquiries.
+
+Consequence for the KPI table: a percentage target only matches the bridge once the baseline is known. +25% in 2027 equals the bridge's 14 enquiries only if non-brand organic enquiries are about 56 a year today; +60% in 2028 equals 105 only if they are about 175 a year. The two placeholders cannot both be right, so the absolute increments above are the binding KPI and the percentages are re-based at Gate 0.
+
+That small number is the honest size of the SEO prize in the bridge: the cost of technical work (section 12, SEK 0.59 M committed over 2027-28 excluding contingency) is large next to a 2028 gross profit of about SEK 0.30 M from L4. Technical SEO therefore has to be justified mainly by protecting the existing organic flow inside the 2,148 enquiries and the #1 head terms, and by the measurement that lets paid Tranche B be judged against organic. If the baseline shows that flow is small or mostly branded, scale this plan down (R-T11).
 
 ---
 
@@ -315,18 +339,25 @@ Technical SEO is funded from the committed "SEO and content production" and "Mea
 | Hosting/CDN/caching upgrade (if audit shows need) | 0 | 40,000 | 40,000 | Technology builds line | Only if confirmed |
 | Monitoring (uptime, robots/sitemap alerts, RUM) | 0 | 15,000 | 15,000 | Measurement line | |
 | Structured-data plugin or custom development | 0 | 25,000 | 5,000 | Technology builds line | |
-| Ongoing technical retainer (monthly check, release reviews, about 8 hours per month) | 0 | 90,000 | 90,000 | SEO line | |
+| Ongoing technical retainer (monthly check, release reviews, about 6 hours per month, 72 h at about SEK 1,250) | 0 | 90,000 | 90,000 | SEO line | Hours cut from 8 to 6 so the figure matches the stated hourly range [T14] |
 | Training (in-house team on Search Console, CWV, release checklist) | 0 | 15,000 | 10,000 | SEO line | |
-| Contingency (about 10%) | 8,000 | 55,000 | 40,000 | Reserve | |
-| **Total technical SEO and site integrity** | **93,000** | **640,000** | **440,000** | | |
+| Contingency (about 10%) | 8,000 | 55,000 | 40,000 | None: no envelope exists (see flag) | Strategy has a reserve line only in 2028 (0.10 M, earmarked for gap-lever pilots) |
+| **Total including contingency** | **93,000** | **640,000** | **440,000** | | |
+| **Total inside existing strategy envelopes (excluding contingency)** | **85,000** | **585,000** | **400,000** | | The figure to approve |
 | of which from SEO and content line | 85,000 | 195,000 | 190,000 | | leaves content: 15,000 / 505,000 / 610,000 |
-| of which from technology builds line | 0 | 315,000 | 175,000 | | within 0.6 M / 0.3 M |
-| of which from measurement line | 0 | 75,000 | 35,000 | | within 0.20 M / 0.20 M |
-| of which reserve / contingency | 8,000 | 55,000 | 40,000 | | |
+| of which from technology builds line | 0 | 315,000 | 175,000 | | 52% of the 0.6 M and 58% of the 0.3 M line; see flag |
+| of which from measurement line | 0 | 75,000 | 35,000 | | 38% / 18% of 0.20 M / 0.20 M |
+| of which unfunded contingency | 8,000 | 55,000 | 40,000 | | Only from underspend or CEO approval |
 
-Budget flag for the CEO: the Q4 2026 SEO line of SEK 0.10 M cannot fund both the technical audit (SEK 70k) and the 6 hubs targeted by 31 Dec 2026. Either the audit is partly funded from the Q4 technology/measurement lines, or fewer hubs publish before the year end. Recommendation: fund the audit SEK 70k from the technology line so that the Q4 SEO line covers tooling and hub content; the total envelope does not change. Gated or optional: replatform (not budgeted; see 9.4), Nordic technical build (not budgeted; GL1 decision), AI-search tooling beyond SEK 15k per year (gated on measured referral volume).
+Budget flags for the CEO:
+1. **Q4 2026 SEO line.** SEK 0.10 M cannot fund both the technical audit (SEK 70k) and the 6 hubs targeted by 31 Dec 2026 (leaves SEK 15k for content). The strategy has no Q4 technology line (Q4 is paid 0.10, SEO 0.10, CRM 0.05, measurement 0.05). Options: (a) recommended: pull SEK 70k forward from the 2027 technology builds line, so the Q4 SEO line covers tools (15k) plus hub content (85k); 2027 web developer budget then falls from 250k to 180k (about 137 hours) unless the line is raised; (b) use the Q4 measurement line (50k max), which competes with tracking v1; (c) halve the audit to about 30 hours by doing the GSC audit in-house, or publish fewer than 6 hubs.
+2. **Unbudgeted items.** (i) Web developer hours in Q4 2026 (staging and plugin inventory, log sample, redirect map, quick fixes; estimate 25-35 hours, roughly SEK 35-45k at the stated rates [T14]) are not in the table. (ii) An interim external SEO lead at 2-3 days a week from 9 Nov would cost roughly SEK 130-190k for the 7-8 weeks to 31 Dec at SEK 1,100-1,600 per hour [T14], more than the whole Q4 SEO line, and the strategy has no SEO/Web lead headcount in section 12. This plan assumes the lead is existing staff [ASSUMPTION-T19]; if not, the CEO must fund it separately.
+3. **Technology line share.** This workstream draws 52% (2027) and 58% (2028) of a technology line that must also build the CRM, the budget-bracket quote form and tracking (strategy A18, workstream 14). Confirm the split with the CRM workstream and Head of Marketing before committing; if the line is insufficient, the quote form and CRM take precedence and CWV/schema work is staged later.
+4. **No contingency envelope in 2027.** Contingency is shown for transparency only and is not funded.
 
-Resourcing (roles): SEO/Web lead (owner; if not yet hired, an interim external lead 2-3 days a week from 9 Nov 2026), Web developer (agency or in-house, minimum 8 hours a week reserved), Analytics lead, Content lead (sibling workstream), Head of Marketing (budget and priorities), Legal/Ops (price and claim review), CRM manager (form-to-CRM join). RACI: SEO lead Accountable for the plan and release sign-off; Web dev Responsible for implementation; Analytics lead Responsible for measurement; Head of Marketing Consulted/Approver; CEO Informed, approves exceptions to release windows.
+Gated or optional: replatform (not budgeted; see 9.4), Nordic technical build (not budgeted; GL1 decision), AI-search tooling beyond SEK 15k per year (gated on measured referral volume).
+
+Resourcing (roles): SEO/Web lead (owner; if not yet hired, an interim external lead 2-3 days a week from 9 Nov 2026), Web developer (agency or in-house, minimum 8 hours a week reserved across all projects; only about 4 hours a week average is budgeted to this workstream in 2027), Analytics lead, Content lead (sibling workstream), Head of Marketing (budget and priorities), Legal/Ops (price and claim review), CRM manager (form-to-CRM join). RACI: SEO lead Accountable for the plan and release sign-off; Web dev Responsible for implementation; Analytics lead Responsible for measurement; Head of Marketing Consulted/Approver; CEO Informed, approves exceptions to release windows.
 
 ---
 
@@ -336,7 +367,7 @@ Resourcing (roles): SEO/Web lead (owner; if not yet hired, an interim external l
 |---|---|---|---|
 | T1 | Index health target: below 5% of submitted URLs in "not indexed" states | Typical healthy target for sites of this size; no site data | GSC page-indexing export |
 | T2 | 90% of URLs "Good" on all three CWV per template | Reasonable ambition for a content site; sites vary | CrUX/GSC baseline; may be set at 75% for the first quarter |
-| T3 | Non-brand organic enquiries +25% (2027 H2 vs 2026 H2) and +60% (2028) | Sized loosely to L4 (+0.2 and +1.5 MSEK) and the 4-9 month lag; no baseline exists | Baseline and the conversion data |
+| T3 | Non-brand organic enquiries +25% (2027) and +60% (2028) vs the same months of 2026 | Placeholders only. They are not mutually consistent with the bridge: the bridge implies about 14 extra enquiries in 2027 and 105-115 in 2028 (section 11.3), which equal +25% and +60% only for different baselines | Baseline and the conversion data |
 | T4 | Products are tagged by region and theme in the CMS | Needed for programmatic internal links | Content model audit |
 | T5 | At least 250 unique words above the fold on every indexable product page | Common quality heuristic, not a Google rule | Page-level audit |
 | T6 | TTFB at most 0.8 s at p75 | Common good-practice target | Hosting data |
@@ -350,6 +381,10 @@ Resourcing (roles): SEO/Web lead (owner; if not yet hired, an interim external l
 | T14 | Tool and labour costs | Indicative market levels, not quotes | Vendor and agency quotes by 31 Dec 2026 |
 | T15 | WordPress, Yoast, Smush Pro, Gravity Forms and CookieYes-family plugin are the production stack and are current | Observed from the public HTML on 2026-11-02; hosting, versions of other plugins and staging unknown | Dev access and plugin inventory |
 | T16 | One developer can implement the template work in the hours stated | No view of theme code quality | Dev review in week 2 |
+| T17 | Bandwidth is not the main performance cost on Swedish mobile; JavaScript, tags and images are | Hypothesis from the observed stack; no measurement | CrUX/RUM baseline |
+| T18 | Competitor guides cite official sources less consistently than we can | Hypothesis; not checked | Competitor content audit (R06 action 5) |
+| T19 | The SEO/Web lead is existing staff at no extra cost to this budget | Strategy section 12 lists no SEO/Web lead hire; unknown | CEO confirmation |
+| T20 | Q4 2026 web developer effort of 25-35 hours and retainer at about SEK 1,250 per hour | Derived from the stated indicative rate range | Developer quote |
 
 Dependencies on other workstreams and strategy items: content hubs and calendar (content workstream; the first 6 hubs and their templates must exist by 31 Dec 2026), tracking v1 30 Nov 2026 and full 31 Jan 2027 (CRM/Analytics), data baseline pack 15 Dec 2026 (CFO), brand claim register (workstream 01; claims in titles and schema), review programme (CRM; review markup), price and package law check (Legal), pricing source of truth (Product/Finance), hiring of SEO/Web lead or interim, GL1 scope decision 31 Mar 2027, FX policy and fixed-price departures (departure pages are not published with fixed prices before 20 Nov 2026 FX policy).
 
@@ -363,7 +398,7 @@ Dependencies on other workstreams and strategy items: content hubs and calendar 
 | 16-30 Nov 2026 | Crawl, log and GSC audits; URL taxonomy and canonical rules signed off (30 Nov); release checklist adopted; template specs for hubs (guide, best-time, cost, safety) and schema; tracking v1 verified for organic (30 Nov) | SEO lead, Web dev, Analytics |
 | 1-15 Dec 2026 | Redirect map; quick fixes (robots, sitemaps, meta templates, noindex on search/filter URLs, LCP image fix, tag loading); Gate 0 pack: GSC/keyword baseline and CWV baseline | SEO lead, Web dev |
 | 16-31 Dec 2026 | First 6 hubs publish through the checked template; Bing/IndexNow; schema v1 live on hub and product templates. Change freeze on High-risk items from 15 Dec | SEO lead, Content |
-| Jan 2027 | Hubs indexed and monitored daily; consent/tracking v2, offline conversions, GA4 AI channel; CWV fixes shipped to templates (Medium risk, staged); weekly dashboard; 31 Jan priority hubs live (strategy) | SEO lead, Analytics, Web dev |
+| Jan 2027 | Hubs indexed and monitored daily; tracking v2 on the existing consent plugin (Medium; a consent-tool replacement needs a CEO exception), offline conversions, GA4 AI channel; CWV fixes shipped to templates (Medium risk, staged); weekly dashboard; 31 Jan priority hubs live (strategy) | SEO lead, Analytics, Web dev |
 | Feb 2027 | Duplicate/cannibalisation clean-up in batches; expired-departure rules; schema validation across all templates (28 Feb); no High-risk changes | SEO lead |
 | Mar 2027 | CWV at 90% Good (Gate 1 evidence); second developer named; replatform decision memo (default: no); Nordic technical options paper for the 31 Mar GL1 decision | SEO lead, Web dev |
 | Q2 2027 | Release window opens for larger template work; internal-link programme (programmatic modules); month/segment spokes scale; first read of L4 cohort; review markup if volume and compliance allow | SEO lead |
@@ -407,7 +442,7 @@ Dependencies on other workstreams and strategy items: content hubs and calendar 
 | By 30 Nov | URL taxonomy, canonical rules, keyword-to-URL map and hub template specs (schema, internal-link blocks) signed off; tracking v1 for organic verified; first quick wins shipped to staging | SEO lead / Web dev | Sign-off record |
 | By 2 Dec | Gate 0 prep: baseline dashboard (GSC non-brand/brand, GA4 landing pages, CWV, indexation) ready for 15 Dec review; list of unknowns still open | SEO lead / Analytics | Dashboard v0 |
 
-Decisions needed from the CEO in the first 30 days: (1) approve the interim SEO lead and the SEK 70k audit (and the funding source, section 12); (2) approve the release freeze 15 Dec - 15 Mar; (3) confirm that replatforming is off the table until Gate 1; (4) confirm the policy on AI crawlers (allow by default); (5) name the single owner of price data.
+Decisions needed from the CEO in the first 30 days: (1) confirm who the SEO/Web lead is and how an interim is funded, and approve the SEK 70k audit with the funding option in section 12 flag 1; (2) approve the release freeze 15 Dec - 15 Mar; (3) confirm that replatforming is off the table until Gate 1; (4) confirm the policy on AI crawlers (allow by default); (5) name the single owner of price data; (6) rule on the tracking v2 / consent-tool change versus the 15 Dec - 15 Mar freeze (section 9.2 step 7); (7) confirm the technology line split with the CRM workstream (section 12 flag 3).
 
 ---
 

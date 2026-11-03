@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reseförslag till Sydafrika: rundresor, safari och mer | sydafrikaresor.se</title>
+<meta name="description" content="Hitta inspiration till din Sydafrikaresa. Filtrera reseförslag efter resestil och längd, och be om ett förslag utan förpliktelser.">
+<link rel="canonical" href="https://www.sydafrikaresor.se/reseforslag/">
+<meta name="theme-color" content="#1f5a45">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="sv_SE">
+<meta property="og:title" content="Reseförslag till Sydafrika | sydafrikaresor.se">
+<meta property="og:description" content="Filtrera reseförslag efter resestil och längd.">
+<meta property="og:url" content="https://www.sydafrikaresor.se/reseforslag/">
+<link rel="stylesheet" href="assets/css/styles.css">
+<style>
+.filters{display:grid;gap:var(--s-3);margin-bottom:var(--s-4)}
+.filters{display:none} .js .filters{display:grid}
+.filter legend{font-size:1rem}
+.card-list{list-style:none;margin:0;padding:0}
+.card-list [hidden]{display:none}
+.result-count{font-weight:600}
+.empty{padding:var(--s-4);background:var(--c-surface);border:1px dashed var(--c-line);border-radius:var(--radius)}
+.crumbs{padding-block:var(--s-3);font-size:.95rem}
+.crumbs ol{display:flex;flex-wrap:wrap;gap:.4rem;list-style:none;margin:0;padding:0}
+.crumbs li+li::before{content:"/";margin-right:.4rem;color:var(--c-muted)}
+</style>
+<script src="assets/js/main.js" defer></script>
+<script src="assets/js/reseforslag.js" defer></script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "CollectionPage",
+   "@id": "https://www.sydafrikaresor.se/reseforslag/#page",
+   "url": "https://www.sydafrikaresor.se/reseforslag/",
+   "name": "Reseförslag till Sydafrika",
+   "description": "Inspiration och reseförslag till Sydafrika. Filtrera efter resestil och längd.",
+   "inLanguage": "sv-SE",
+   "isPartOf": {
+    "@type": "WebSite",
+    "name": "sydafrikaresor.se",
+    "url": "https://www.sydafrikaresor.se/"
+   },
+   "breadcrumb": {
+    "@id": "https://www.sydafrikaresor.se/reseforslag/#bc"
+   },
+   "mainEntity": {
+    "@id": "https://www.sydafrikaresor.se/reseforslag/#list"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://www.sydafrikaresor.se/reseforslag/#bc",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Start",
+     "item": "https://www.sydafrikaresor.se/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Reseförslag",
+     "item": "https://www.sydafrikaresor.se/reseforslag/"
+    }
+   ]
+  },
+  {
+   "@type": "ItemList",
+   "@id": "https://www.sydafrikaresor.se/reseforslag/#list",
+   "name": "Reseförslag till Sydafrika",
+   "numberOfItems": 7,
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "url": "https://www.sydafrikaresor.se/reseforslag/kapstaden-vinlandet/",
+     "name": "Kapstaden och vinlandet"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "url": "https://www.sydafrikaresor.se/reseforslag/safari-kruger/",
+     "name": "Safari i Krugerområdet"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "url": "https://www.sydafrikaresor.se/reseforslag/kapstaden-safari/",
+     "name": "Kapstaden och safari"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "url": "https://www.sydafrikaresor.se/reseforslag/garden-route/",
+     "name": "Garden Route och kusten"
+    },
+    {
+     "@type": "ListItem",
+     "position": 5,
+     "url": "https://www.sydafrikaresor.se/reseforslag/familjeresa/",
+     "name": "Familjeresa till Sydafrika"
+    },
+    {
+     "@type": "ListItem",
+     "position": 6,
+     "url": "https://www.sydafrikaresor.se/reseforslag/brollopsresa/",
+     "name": "Bröllopsresa"
+    },
+    {
+     "@type": "ListItem",
+     "position": 7,
+     "url": "https://www.sydafrikaresor.se/reseforslag/stor-rundresa/",
+     "name": "Den stora rundresan"
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Hoppa till innehållet</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="/" aria-label="sydafrikaresor.se, startsida">sydafrikaresor.se <span class="placeholder">[LOGGA]</span></a>
+    <nav class="nav" aria-label="Huvudmeny">
+      <button class="menu-toggle" aria-expanded="false" aria-controls="primary-menu">Meny</button>
+      <ul id="primary-menu">
+        <li><a href="/rundresor/">Rundresor</a></li>
+        <li><a href="/reseforslag/" aria-current="page">Reseförslag</a></li>
+        <li><a href="/resmal/">Resmål</a></li>
+        <li><a href="/guide/">Planera &amp; guider</a></li>
+        <li><a href="/om-oss/">Om oss</a></li>
+        <li><a href="tel:+46000000000">Ring <span class="placeholder">[nummer]</span></a></li>
+        <li><a class="btn" href="/#offert">Prata med en rådgivare</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<nav class="wrap crumbs" aria-label="Brödsmula">
+  <ol><li><a href="/">Start</a></li><li><span aria-current="page">Reseförslag</span></li></ol>
+</nav>
+<section class="wrap" aria-labelledby="h1" style="padding-block:var(--s-4)">
+  <h1 id="h1">Reseförslag till Sydafrika</h1>
+  <p class="lead">Här hittar du inspiration till din resa. Välj resestil och längd för att se förslag som passar. Alla upplägg kan anpassas, och du får ett förslag utan förpliktelser. <span class="placeholder">[Slutlig ingress: WS01 meddelandehus]</span></p>
+</section>
+
+<section class="section section--alt" id="forslag" aria-labelledby="list-h">
+  <div class="wrap">
+    <h2 id="list-h">Hitta ett förslag som passar dig</h2>
+    <form class="filters" id="filters" aria-label="Filtrera reseförslag" onsubmit="return false">
+      <fieldset class="filter"><legend>Resestil</legend><div class="chips"><label><input type="radio" name="stil" value="alla" checked> Alla</label><label><input type="radio" name="stil" value="rundresa"> Rundresa</label><label><input type="radio" name="stil" value="safari"> Safari</label><label><input type="radio" name="stil" value="stad"> Stad och vin</label><label><input type="radio" name="stil" value="natur"> Natur och kust</label><label><input type="radio" name="stil" value="familj"> Familj</label><label><input type="radio" name="stil" value="romantik"> Romantik</label></div></fieldset>
+      <fieldset class="filter"><legend>Längd</legend><div class="chips"><label><input type="radio" name="langd" value="alla" checked> Alla</label><label><input type="radio" name="langd" value="kort"> Kortare</label><label><input type="radio" name="langd" value="medel"> Medellång</label><label><input type="radio" name="langd" value="lang"> Längre</label></div></fieldset>
+      <p class="meta">Längdgrupperna är riktvärden. <span class="placeholder">[Dagsintervall per grupp fastställs av Produkt]</span></p>
+    </form>
+    <p class="result-count" id="result-count" role="status" aria-live="polite">Visar alla 7 reseförslag.</p>
+    <ul class="cards card-list" id="trip-list">
+      <li class="card" data-style="stad" data-duration="kort">
+        <img src="assets/img/placeholder-landscape.svg" width="1200" height="800" loading="lazy" alt="Platshållare: bild för Kapstaden och vinlandet (ersätts med egen eller licensierad bild)">
+        <div class="card__body">
+          <p class="meta">Stad och vin</p>
+          <h3>Kapstaden och vinlandet <span class="placeholder">[PLATSHÅLLARE]</span></h3>
+          <p>Kapstaden, Godahoppsudden och vinregionen runt Stellenbosch. Ett upplägg för dig som vill ha kultur, mat och natur nära varandra.</p>
+          <p class="meta">Längd: <span class="placeholder">[X dagar, från produktdata]</span> &middot; Pris: <span class="placeholder">[från-pris och vad det omfattar]</span></p>
+          <a class="btn" href="/reseforslag/kapstaden-vinlandet/" data-trip="kapstaden-vinlandet">Läs mer om Kapstaden och vinlandet</a>
+        </div>
+      </li>
+      <li class="card" data-style="safari" data-duration="medel">
+        <img src="assets/img/placeholder-landscape.svg" width="1200" height="800" loading="lazy" alt="Platshållare: bild för safari i Krugerområdet (ersätts med egen eller licensierad bild)">
+        <div class="card__body">
+          <p class="meta">Safari</p>
+          <h3>Safari i Krugerområdet <span class="placeholder">[PLATSHÅLLARE]</span></h3>
+          <p>Fokus på vilda djur och safaridagar. Rådgivaren föreslår lodge och upplägg utifrån dina önskemål.</p>
+          <p class="meta">Längd: <span class="placeholder">[X dagar, från produktdata]</span> &middot; Pris: <span class="placeholder">[från-pris och vad det omfattar]</span></p>
+          <a class="btn" href="/reseforslag/safari-kruger/" data-trip="safari-kruger">Läs mer om safari i Krugerområdet</a>
+        </div>
+      </li>
+      <li class="card" data-style="stad" data-duration="medel">
+        <img src="assets/img/placeholder-landscape.svg" width="1200" height="800" loading="lazy" alt="Platshållare: bild för kapstaden och safari (ersätts med egen eller licensierad bild)">
+        <div class="card__body">
+          <p class="meta">Stad och safari</p>
+          <h3>Kapstaden och safari <span class="placeholder">[PLATSHÅLLARE]</span></h3>
+          <p>Storstad och safari i samma resa. Texten ersätts av produktansvarig.</p>
+          <p class="meta">Längd: <span class="placeholder">[X dagar, från produktdata]</span> &middot; Pris: <span class="placeholder">[från-pris och vad det omfattar]</span></p>
+          <a class="btn" href="/reseforslag/kapstaden-safari/" data-trip="kapstaden-safari">Läs mer om Kapstaden och safari</a>
+        </div>
+      </li>
+      <li class="card" data-style="natur" data-duration="medel">
+        <img src="assets/img/placeholder-landscape.svg" width="1200" height="800" loading="lazy" alt="Platshållare: bild för Garden Route och kusten (ersätts med egen eller licensierad bild)">
+        <div class="card__body">
+          <p class="meta">Natur och kust</p>
+          <h3>Garden Route och kusten <span class="placeholder">[PLATSHÅLLARE]</span></h3>
+          <p>Kustlandskap, nationalparker och små orter längs Garden Route. Passar den som vill se mycket i egen takt.</p>
+          <p class="meta">Längd: <span class="placeholder">[X dagar, från produktdata]</span> &middot; Pris: <span class="placeholder">[från-pris och vad det omfattar]</span></p>
+          <a class="btn" href="/reseforslag/garden-route/" data-trip="garden-route">Läs mer om Garden Route och kusten</a>
+        </div>
+      </li>
+      <li class="card" data-style="familj" data-duration="medel">
+        <img src="assets/img/placeholder-landscape.svg" width="1200" height="800" loading="lazy" alt="Platshållare: bild för familjeresa till sydafrika (ersätts med egen eller licensierad bild)">
+        <div class="card__body">
+          <p class="meta">Familj</p>
+          <h3>Familjeresa till Sydafrika <span class="placeholder">[PLATSHÅLLARE]</span></h3>
+          <p>Ett upplägg med fokus på aktiviteter för barn och vuxna. Anpassas efter barnens åldrar.</p>
+          <p class="meta">Längd: <span class="placeholder">[X dagar, från produktdata]</span> &middot; Pris: <span class="placeholder">[från-pris och vad det omfattar]</span></p>
+          <a class="btn" href="/reseforslag/familjeresa/" data-trip="familjeresa">Läs mer om familjeresa till Sydafrika</a>
+        </div>
+      </li>
+      <li class="card" data-style="romantik" data-duration="medel">
+        <img src="assets/img/placeholder-landscape.svg" width="1200" height="800" loading="lazy" alt="Platshållare: bild för bröllopsresa (ersätts med egen eller licensierad bild)">
+        <div class="card__body">
+          <p class="meta">Romantik</p>
+          <h3>Bröllopsresa <span class="placeholder">[PLATSHÅLLARE]</span></h3>
+          <p>Ett romantiskt upplägg för två. Anpassas efter önskemål, tider och budget.</p>
+          <p class="meta">Längd: <span class="placeholder">[X dagar, från produktdata]</span> &middot; Pris: <span class="placeholder">[från-pris och vad det omfattar]</span></p>
+          <a class="btn" href="/reseforslag/brollopsresa/" data-trip="brollopsresa">Läs mer om bröllopsresa</a>
+        </div>
+      </li>
+      <li class="card" data-style="rundresa" data-duration="lang">
+        <img src="assets/img/placeholder-landscape.svg" width="1200" height="800" loading="lazy" alt="Platshållare: bild för den stora rundresan (ersätts med egen eller licensierad bild)">
+        <div class="card__body">
+          <p class="meta">Rundresa</p>
+          <h3>Den stora rundresan <span class="placeholder">[PLATSHÅLLARE]</span></h3>
+          <p>Ett längre upplägg som kombinerar flera regioner. Rutt och innehåll fastställs av produktansvarig.</p>
+          <p class="meta">Längd: <span class="placeholder">[X dagar, från produktdata]</span> &middot; Pris: <span class="placeholder">[från-pris och vad det omfattar]</span></p>
+          <a class="btn" href="/reseforslag/stor-rundresa/" data-trip="stor-rundresa">Läs mer om den stora rundresan</a>
+        </div>
+      </li>
+    </ul>
+    <p class="empty" id="empty" hidden>Inga reseförslag matchar just nu. <a href="/#offert">Berätta vad du söker</a> så tar en rådgivare fram ett eget förslag.</p>
+    <p class="meta" style="margin-top:var(--s-4)"><span class="placeholder">[Samtliga kort är platshållare. Rutter, längder, priser och bilder levereras av produktdata (WS02/WS03). Inga priser eller omdömen anges här.]</span></p>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="cta-h">
+  <div class="wrap">
+    <h2 id="cta-h">Hittar du inte rätt?</h2>
+    <p class="lead">Berätta om dina önskemål så tar en rådgivare fram ett förslag som utgår från dig.</p>
+    <div class="hero__cta">
+      <a class="btn" href="/#offert">Be om offert</a>
+      <a class="btn btn--ghost" href="/rundresor/">Se våra rundresor</a>
+      <a class="btn btn--ghost" href="/resmal/">Utforska resmål</a>
+      <a class="btn btn--ghost" href="/guide/">Planera &amp; guider</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap cols">
+    <div><h2 style="font-size:1.1rem">Kontakt</h2><p><span class="placeholder">[Företagsnamn, org.nr, adress, telefon, e-post]</span></p></div>
+    <div><h2 style="font-size:1.1rem">Information</h2><ul><li><a href="/resegaranti/">Resegaranti</a></li><li><a href="/integritet/">Personuppgifter</a></li><li><a href="/villkor/">Resevillkor</a></li><li><a href="/om-oss/">Om oss</a></li></ul></div>
+    <div><h2 style="font-size:1.1rem">Våra andra resmål</h2><p><span class="placeholder">[Länkar till systerwebbplatser enligt WS04 4.7]</span></p></div>
+  </div>
+</footer>
+
+<div class="mobile-bar" role="region" aria-label="Snabbval">
+  <a class="btn" href="/#offert">Be om offert</a>
+  <a class="btn btn--ghost" href="tel:+46000000000">Ring</a>
+</div>
+
+<div class="mobile-bar" role="region" aria-label="Snabbval">
+  <a class="btn" href="/#offert">Be om offert</a>
+  <a class="btn btn--ghost" href="tel:+46000000000">Ring</a>
+</div>
+</body>
+</html>

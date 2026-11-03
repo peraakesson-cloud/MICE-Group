@@ -29,7 +29,7 @@ Three consequences shape this plan:
 | O4 | Margin visible and enforced on every quote | 100% of proposals show gross margin and approval band | 31 Jan 2027 | G1 |
 | O5 | Early-bird and promotions that fill supply-held departures without discounting | Promotions and value-adds at most 2% of turnover (ceiling 0.96 MSEK in 2027, 1.29 MSEK in 2028); planned use about half of the ceiling | From 1 Dec 2026 | G2, A20 |
 | O6 | Deposit and instalment terms that match supplier cash timing and keep conversion | Terms redesigned and legally reviewed; conversion guardrail respected | Interim 27 Nov 2026, full 31 Mar 2027 | G6, G7, R10 4.4 |
-| O7 | Currency policy approved and operating | FX policy approved 20 Nov 2026; 50-70% of confirmed foreign-currency cost hedged at booking confirmation; 6% price buffer plus legal clause live before fixed-price departures are published | 20 Nov 2026 | G3, A24 |
+| O7 | Currency policy approved and operating | FX policy approved 20 Nov 2026; Legal confirms clause sufficient 27 Nov 2026; 50-70% of confirmed foreign-currency cost hedged at booking confirmation; 6% pricing-rate buffer plus clause live before fixed-price departures are published | 20 Nov 2026 (policy), 27 Nov 2026 (clause) | G3, A24 |
 | O8 | Revenue management on fixed departures | Fill-to-curve tracking; go/no-go rule at T-75 days; targeted release of unsold supply | Q1 2027 pilot; full by Q3 2027 | P4, G7 |
 | O9 | Revenue per traveller flat in 2027, +2.2% in 2028, with margin per traveller tracked separately | ABV 45,000 (2026-27), 46,000 (2028); attach-rate programme | 2027-2028 | A1, L6 |
 
@@ -55,8 +55,8 @@ From the client's own site (R10 section 3.1, scraped 2026-11-02, "from" per pers
 | Entry guided, flights included | Fixed 2027-28 departures, 10-13 days, 12 travellers [A23] | 36-45k | 18% (G1) | Defend against Albatros/Tourcompass at a visible premium, fill block seats | Air pass-through dilutes margin; floor already set in strategy G1 |
 | Core guided and tailor-made | 13-18 day guided; tailor-made Cape Town + Kruger + Garden Route | 45-55k | 20% | Volume engine (segments 1-2) | Blended planning margin |
 | Premium | Food and wine, golf, rail, whales, 19-21 day, solo/55+ small group | 55-70k | 22% [A: premium tier should earn above blended; test against actual] | Margin accretion and 55+ segment | Higher land share, less price-sensitive [A13] |
-| Self-drive and low-ticket tailor-made | Garden Route self-drive, 17.9-30k | 18-30k | 18%, capped by confirmed car and room supply | DIY defence | RT-S S11 supply cap |
-| Extensions | Victoria Falls, Botswana, Mauritius, Seychelles | 46.9-61.9k per extension product (site) | 22% [A] | ABV and margin lift | Land-heavy |
+| Self-drive and low-ticket tailor-made | Garden Route self-drive, 17.9-30k | 18-30k | 18% [A: strategy sets no floor for this tier; 18% mirrors ladder entry], capped by confirmed car and room supply | DIY defence | RT-S S11 supply cap |
+| Extensions | Victoria Falls, Botswana, Mauritius, Seychelles | Seychelles/Mauritius add-ons 46.9-61.9k on the client site (R10); Victoria Falls/Botswana price not captured [A: collect from site] | 22% [A] | ABV and margin lift | Land-heavy |
 | Partner-sold (B2B) | Net-priced via agents/affinity | Public direct price as floor (G5) | 15% after commission | Distribution | G5 |
 
 Rule: the **net-price floor of any partner or agent equals the direct public price less commission**, never a lower retail price (G5, R12). Partners sell at the same public price, and commission of 8-12% is paid from margin [A17].
@@ -69,7 +69,7 @@ Blended margin is an average of very different components. Illustration only:
 |---|---|---|---|
 | International flights | 30% | 8% | 2.4 pts |
 | Ground (lodges, guides, transfers, park fees) | 60% | 25% | 15.0 pts |
-| Insurance and ancillaries | 10% | 35% | 3.5 pts |
+| Insurance and ancillaries (insurance commission 20-30% per section 7; transfers, upgrades) | 10% | 35% | 3.5 pts |
 | **Blended** | 100% | | **20.9 pts** |
 
 Takeaway: shifting 5 points of price share from flights to land adds about 0.85 points of blended margin (5% x (25% - 8%)). This is why land-heavy extensions, longer in-country stays and tailor-made content matter more than selling more flights. It is also why the flights-included entry tier carries the lowest floor.
@@ -78,23 +78,24 @@ Takeaway: shifting 5 points of price share from flights to land adds about 0.85 
 
 1. **Build-up:** net supplier rate x pricing FX rate (section 8.4) x (1 + mark-up) + 0.6% fund levy (R09) + payment fees + guarantee cost allocation + hedge cost allocation. The levy and payment fees are cost of sales in the quote margin (RT-E section 7).
 2. **Mandatory costs are in the price.** Konsumentverket treats prices that omit mandatory costs as misleading (R09, R08); the "från" price must have a bookable departure behind it and say whether flights are included (workstream 01 rule).
-3. **Repricing on every rate card renewal** and no later than 31 Jan 2027 for 2027 departures not yet sold. Third-party fee changes are repriced with mark-up, not at cost: Kruger conservation fee rises about 14.9% from 1 Nov 2026 (R602 to R692) and Cape Town luxury ADR has grown 8.7% a year 2015-2025 (strategy section 5, R05/HVS).
-4. **ABV stays flat in 2027** because like-for-like list prices rise about 5% while ladder mix dilutes about 5% (strategy section 2). We do not set targets that assume +4% or +10% ABV.
-5. **Premium is explained, not hidden.** Price pages carry the "Därfor kostar det mer" proof block from workstream 01 (O3, due 31 Jan 2027). Pricing supplies the numbers for it: what is inside our price that is outside a typical group trip.
-6. **Single supplement and solo travellers.** Solo women 55+ are a priority segment (strategy section 7). Set the single supplement from actual room cost; offer a "dela rum-garanti" option on fixed departures so solo travellers are not penalised when a roommate can be matched. Supplement level is [A] until room-cost data is in; test 2027 departures against the supplement shown by the Albatros/Tourcompass cluster.
+3. **The 6% buffer is on the rate, not on the price.** A pricing rate 6% adverse applied to a 60% foreign-currency cost share lifts list price by about 3.6% (0.06 x 0.60) [own arithmetic, A24]. This is the real conversion cost of the buffer and is part of the +15-20% premium to be explained.
+4. **Repricing on every rate card renewal** and no later than 31 Jan 2027 for 2027 departures not yet sold. Third-party fee changes are repriced with mark-up, not at cost: Kruger conservation fee rises about 14.9% from 1 Nov 2026 (R602 to R692) and Cape Town luxury ADR has grown 8.7% a year 2015-2025 (strategy section 5, R05/HVS).
+5. **ABV stays flat in 2027** because like-for-like list prices rise about 5% while ladder mix dilutes about 5% (strategy section 2). We do not set targets that assume +4% or +10% ABV.
+6. **Premium is explained, not hidden.** Price pages carry the "Därför kostar det mer än en gruppresa" proof block from workstream 01 (O3, due 31 Jan 2027). Pricing supplies the numbers for it: what is inside our price that is outside a typical group trip.
+7. **Single supplement and solo travellers.** Solo women 55+ are a priority segment (strategy section 7). Set the single supplement from actual room cost; offer a "Garanti för delat rum" option on fixed departures so solo travellers are not penalised when a roommate can be matched. Supplement level is [A] until room-cost data is in; test 2027 departures against the supplement shown by the Albatros/Tourcompass cluster.
 
 ### 4.5 Competitor price corridor
 
 - Monthly price check of 10 reference itineraries (3 group-with-flights, 2 premium group, 3 mass-market round trips, 2 specialist tailor-made) from public sites: Ving, TUI, Albatros, Tourcompass, Temaresor, MyChoice, Safariresor.se, Afrikaresor.se (strategy 6.2, R03). Capture price, inclusions, flights yes/no, date, and promotion (for example Ving's SEK 2,000 code valid to 8 Nov 2026).
 - Output: a price-position index per ladder tier. Target: guided 13-day at +15% to +20% versus the cluster; investigate if the gap exceeds +25% (conversion risk) or falls under +10% (margin leaving on the table).
-- Method: manual first month; automate with a scraper (for example Firecrawl or Bright Data) if the tool cost stays under SEK 5k per month [A]. Public pages only; no logins.
+- Method: manual first month; automate with a scraper (for example Firecrawl or Bright Data) if the tool cost stays under SEK 3k per month [A; fits the SEK 40k annual line in 13.1 together with analyst time]. Public pages only; no logins.
 - We do not match promotions. We respond with value-add, never with price (G2).
 
 ## 5. Margin management
 
 ### 5.1 Baseline first (O1)
 
-By 15 Dec 2026 (Gate 0) the CFO delivers: gross margin by product, channel and departure year for 2024-2026 YTD; the definition of the 40 MSEK (gross package value vs net revenue, which products and destinations, whether extensions and MICE are included - A8); realised ABV and party size; cancellation history; supplier payment terms and currencies; current guarantee instrument and cost. The core finding to test: a company with about 22 employees on 40 MSEK turnover implies either a gross margin above 20% or a turnover definition different from A8 (strategy 12.2, RT-E). **Decision rule (RT-E recommendation 1):** if gross margin on action-driven business is below 20% (break-even band 18-22%), reshape the plan toward margin before volume.
+By 15 Dec 2026 (Gate 0) the CFO delivers: gross margin by product, channel and departure year for 2024-2026 YTD; the definition of the 40 MSEK (gross package value vs net revenue, which products and destinations, whether extensions and MICE are included - A8); realised ABV and party size; cancellation history; supplier payment terms and currencies; current guarantee instrument and cost. The core finding to test: a company with about 22 employees on 40 MSEK turnover implies either a gross margin above 20% or a turnover definition different from A8 (strategy 12.2, RT-E). **Decision rule (RT-E recommendation 1, re-based to strategy v2):** RT-E set a break-even band of 18-22% on v1 costs; strategy v2 (12.2) puts break-even at about 23.5% on the whole book with incremental cost of 3.3 / 7.1 MSEK. If realised gross margin is below 20%, reshape the plan toward margin before volume; the CEO must also accept that anywhere below about 23.5% the programme is loss-making within the SEK 3.0 M 2027 loss budget (strategy 12.3).
 
 ### 5.2 Quote margin calculator and approval bands (O4)
 
@@ -107,22 +108,22 @@ A single calculator (spreadsheet in November, CRM-integrated by Q2 2027) is mand
 | 15% to 17.9% | CFO | Needs a reason code (strategic account, supply release, extension fill) |
 | Below 15% | CEO | G1: only with CEO approval; partner sales are measured after commission |
 
-Reason codes are logged. Report: share of bookings approved outside the 20% band (target under 15% of bookings by Q3 2027; under 5% below 18%) [A].
+Tier floors apply on top of the bands: a premium or extension proposal below its 22% floor needs Head of Sales approval even though 20% is "standard" for the book as a whole. Reason codes are logged. Report: share of bookings approved outside the 20% band (target under 15% of bookings by Q3 2027; under 5% below 18%) [A].
 
 ### 5.3 Margin-defence bridge (the squeeze and the offsets)
 
-Expected blended margin without action: 17.8% in 2027 and 16.8% in 2028 (RT-S S3, quoted in strategy 12.2). To hold 20% the offsets must total about 2.2 points (2027) and about 3.2 points (2028). Sizes below are [A] ranges, to be replaced with measured effects at Gate 1:
+Expected blended margin without action: 17.8% in 2027 and 16.8% in 2028 (RT-S S3, quoted in strategy 12.2). To hold 20% the offsets must total about 2.2 points (2027) and about 3.2 points (2028). The ranges below are 2027 estimates only; no separate 2028 estimate exists. Sizes are [A] ranges, to be replaced with measured effects at Gate 1:
 
 | Offset | 2027 range (pts) | Mechanism | Owner |
 |---|---|---|---|
-| Reprice rate cards on renewal with mark-up on inflation | 1.0-1.5 | Section 4.4 rule 3 | Head of Product |
+| Reprice rate cards on renewal with mark-up on inflation | 1.0-1.5 | Section 4.4 rule 4 | Head of Product |
 | FX buffer net of hedge cost and net of buffer released | 0.3-0.6 | 6% buffer plus clause; hedge by confirmed booking | CFO |
 | Mix toward land-heavy, extensions, premium tier | 0.2-0.5 | Section 4.3 | Head of Product / Sales |
 | Supplier rebates and volume overrides on grown volumes | 0.3-0.6 | Negotiate at renewal; volume +20% in 2027 and +57% by 2028 against 2026 bookings is the lever (strategy 2) | Head of Product |
 | Ancillary commission (insurance, transfers, upgrades) | 0.2-0.4 | Section 7 | Head of Sales |
 | **Total** | **2.0-3.6** | Midpoint about 2.8 | |
 
-Reading: the 2027 need (2.2) is covered at the midpoint. The 2028 need (3.2) is covered only in the upper half of the ranges, so 2028 has no margin of safety. If cumulative offsets track below 1.5 points at Gate 1, we raise list prices a further 2% on unsold departures (conversion permitting), narrow the ladder entry tier, or trim volume targets rather than accept sub-floor margin (strategy 12.2 "what gives").
+Reading: the 2027 need (2.2) is covered at the midpoint (2.8) but not at the low end (2.0). If the same ranges simply repeat as cumulative effects in 2028, the 2028 need (3.2) is met only near the top of the range (3.6), so 2028 has no margin of safety; a real 2028 offset estimate is a Gate 1 deliverable (CFO, 31 Mar 2027). If cumulative offsets track below 1.5 points at Gate 1, we raise list prices a further 2% on unsold departures (conversion permitting), narrow the ladder entry tier, or trim volume targets rather than accept sub-floor margin (strategy 12.2 "what gives").
 
 ### 5.4 Price sensitivity facts we use for decisions
 
@@ -132,7 +133,7 @@ Reading: the 2027 need (2.2) is covered at the midpoint. The 2028 need (3.2) is 
 
 ### 5.5 Cost-to-serve (input to margin)
 
-Tailor-made files cost about 3 hours per quote and 8 hours per booking [A23, illustrative]. At a loaded SEK 0.7 M per FTE and 1,450 productive hours that is about SEK 483 per hour, or roughly SEK 1,450 per quote and SEK 3,860 per booking handling (own arithmetic from A18 and A23). By 15 Dec 2026 add handling cost per booking by product to the margin view, so that a SEK 17.9k tailor-made file is not judged on gross margin alone. Optional test (Q2 2027, low priority): a planning fee credited on booking for high-effort files (more than 3 revision rounds). Conversion risk is real; run only if hours per quote exceed plan, and on a small slice.
+Tailor-made files cost about 3 hours per quote and 8 hours per booking [A23, illustrative]. At a loaded SEK 0.7 M per FTE and 1,450 productive hours that is about SEK 483 per hour, or roughly SEK 1,450 per quote and SEK 3,860 per booking handling (own arithmetic from A18 and A23). By 15 Dec 2026 add handling cost per booking by product to the margin view, so that a SEK 17.9k tailor-made file is not judged on gross margin alone. Worked example [own arithmetic]: at a 25% quote-to-booking close rate (about 4 quotes per booking), handling is about 4 x 1,450 + 3,860 = SEK 9,700 per booking, against gross profit of 17,900 x 2.2 travellers x 18% = about SEK 7,100. At these assumptions the cheapest tailor-made files lose money after handling, which supports a minimum-value rule or the planning-fee test below. Optional test (Q2 2027, low priority): a planning fee credited on booking for high-effort files (more than 3 revision rounds). Conversion risk is real; run only if hours per quote exceed plan, and on a small slice.
 
 ## 6. Early-bird, promotions and revenue management
 
@@ -140,14 +141,14 @@ Tailor-made files cost about 3 hours per quote and 8 hours per booking [A23, ill
 
 - **Value-adds, not discounts** (G2). Funded from supplier rebates and added-value inventory (for example an extra night at a contracted lodge rate, private Cape Town day, upgraded transfer). Ceiling 2% of turnover for all promotions and discounts (0.96 MSEK in 2027, 1.29 MSEK in 2028). Planned use about 1% (0.48 and 0.64 MSEK) [A]. CFO signs off each campaign.
 - **Per-booking cap on value-add cost:** SEK 1,500 average at the 2028 booking value of about SEK 101k, about 1.5% [A].
-- **Only for supply held.** No early-bird on a departure for which allocation is not held (Gate 0 register). This keeps promotion aligned with the supply constraint (strategy 13.2).
+- **Only for supply held.** No early-bird on a departure for which allocation is not held. The full register arrives at Gate 0 (15 Dec) but the campaign starts 1 Dec, so Head of Product delivers an interim list of confirmed-held departures by 27 Nov 2026 and the campaign is limited to it. This keeps promotion aligned with the supply constraint (strategy 13.2).
 - **Publish after FX policy.** Fixed-price 2027-28 departures are published only after the FX policy and the ZAR-linked price-adjustment clause are in the terms (strategy 11.3).
 
 ### 6.2 Early-bird windows
 
 | Window | Departures | Offer | Timing | Gate |
 |---|---|---|---|---|
-| Winter 2026/27 early-booking | 2027 departures with held supply (Gate 0 register), emphasis on Jan-Mar and Apr-May shoulder | Value-add (non-price) for deposit within the window | Live 1 Dec 2026 to 31 Jan 2027 | FX policy 20 Nov; clause in terms 27 Nov; Kammarkollegiet call 13 Nov |
+| Winter 2026/27 early-booking | 2027 departures with held supply (Gate 0 register), emphasis on Jan-Mar and Apr-May shoulder | Value-add (non-price) for deposit within the window | Live 1 Dec 2026 to 31 Jan 2027 | FX policy 20 Nov; clause in terms 27 Nov; Kammarkollegiet call 13 Nov; interim held-supply list 27 Nov |
 | Pre-peak push | Jun-Sep 2027 and festive 2027/28 | Value-add; no price cut | Feb-Mar 2027 | Supply held per register |
 | 2028 launch | 2028 departures | Early-booking value-add for deposit before 31 Dec 2027; supports the 19 MSEK order-book checkpoint (24 MSEK stretch) | Soft launch with provisional prices Jun 2027; final prices Sep 2027 after rate cards [A: lodges release next-year rates mid-year] | Margin on the new rate cards at or above floor; FX layer in place |
 | Shoulder and green season | Apr-May, Sep-Nov, Jan-Mar green season (L10) | Targeted CRM offers; value-add | Rolling | Margin at or above 18% (G1/13.7) |
@@ -162,7 +163,7 @@ For each fixed guided departure (about 41 in 2028 at core, A23):
 | T2 "Ordinarie" | Next 40% | Base list | No value-add |
 | T3 "Sista platser" | Last 20%, only when departure fill is 80% or more and 120 days or fewer remain | Base +3% to +5% [A] | Scarcity uplift, tested on 2027 departures first |
 
-Uplifts are permitted under G2 (it forbids blanket cuts). They suit the premium positioning. Rule: T3 tested on at most 25% of departures in 2027 and only where supply is genuinely scarce; stop if conversion drops more than 3 points on affected quotes.
+Partner and agent allotments are priced at the public price of the tier in force, so the net-price floor (G5) moves with T3. Uplifts are permitted under G2 (it forbids blanket cuts). They suit the premium positioning. Rule: T3 tested on at most 25% of departures in 2027 and only where supply is genuinely scarce; stop if conversion drops more than 3 points on affected quotes.
 
 ### 6.4 Fill curve and go/no-go
 
@@ -170,13 +171,14 @@ Targets are [A] and are re-based from actual booking-date curves within 60 days 
 
 | Days before departure | Target fill of guided departure | Action if behind | Action if ahead |
 |---|---|---|---|
-| T-180 | 30% | Targeted CRM offer with value-add | Consider T3 earlier |
+| T-180 | 30% | Targeted CRM offer with value-add | Hold price (T3 opens only at T-120 or later, section 6.3) |
 | T-120 | 50% | Release seats to agent portal allotment (G5 rules); targeted outreach | Activate T3 |
 | T-90 | 65% | Check supplier release windows; adjust itinerary supply | Hold price |
-| T-75 | 75% (go/no-go) | Merge with another departure, convert to tailor-made, or cancel before supplier release dates | Confirm guide and lodges |
+| T-75 | 75% (go/no-go) | Merge with another departure, convert to tailor-made, or cancel before supplier release dates (see release rule below) | Confirm guide and lodges |
 
 Rules:
 - **Minimum viable fill** per departure set from the departure P&L (guide cost is largely fixed per departure; margin at 8 of 12 seats vs 12 of 12 is shown in the model). Illustrative minimum 8 of 12 [A].
+- **Go/no-go date follows the release date.** Flagship allocations release at 90-120 days and mid-tier at 60-90 (strategy 13.2), so a T-75 decision falls after the flagship release. The go/no-go date for each departure is the earlier of T-75 and 14 days before its first penalty-bearing release date; for flagship-based departures that is about T-135 to T-105, and the T-120 and T-90 fill targets become the effective decision points.
 - **Release calendar.** A register of every lodge, block-seat and guide release date per departure; a task fires 14 days before each. Flagship allocations carry 90-120 day release, mid-tier 60-90 (strategy 13.2). The SEK 4 M cap on prepaid or at-risk supply (G7, A24) is tracked here.
 - **Unsold-supply sell-down.** After T-90 and before release, unsold rooms are offered first to the CRM base with value-add, then through agents and affinity partners, within the 15% post-commission floor. Never as public price cuts.
 - **Departure P&L.** Each departure gets a one-page P&L (revenue by traveller, FX-locked cost, guide, levy, commissions, value-adds, margin) opened at publication and updated weekly after T-180.
@@ -199,7 +201,7 @@ L6 is only +1.0 MSEK in 2028 (strategy). Ancillaries support margin, but should 
 | Pre/post extensions (Victoria Falls, Botswana, Mauritius, Seychelles) | Unknown | 20% rising to 35% | Offered at quote stage and again at T-120; fixed price listed on site | Head of Product |
 | Upgrades (lodge category, Rovos Rail, private guide days) | Unknown | 15% to 25% | Pre-trip email at T-90; consultant call | Head of Sales |
 
-Package-law check: add-ons offered after booking may create "linked travel arrangements" with guarantee consequences (Kammarkollegiet via R10 2.2, EU Directive 2026/1024 widening scope about September 2028). Legal reviews the upsell flow before launch (strategy P6, section 15).
+Package-law check: add-ons offered after booking may create "linked travel arrangements" with guarantee consequences (Kammarkollegiet via R10 2.2, EU Directive 2026/1024 widening scope about September 2028 [VERIFY]). Legal reviews the upsell flow before launch (strategy P6, section 15).
 
 ## 8. Currency hedging policy
 
@@ -212,7 +214,7 @@ Revenue is 100% SEK. Costs are in ZAR (lodges, guides, vehicles, park fees), USD
 | Foreign-currency cost (60%) | 28.8 | 38.6 | 48.0 |
 | Hedged at 50% / 60% / 70% (MSEK) | 14.4 / 17.3 / 20.2 | 19.3 / 23.2 / 27.0 | 24.0 / 28.8 / 33.6 |
 | Open exposure at 60% hedge | 11.5 | 15.4 | 19.2 |
-| Loss on open exposure at 10% adverse move | 1.2-1.4 (50-70% hedged) | 1.2-1.9 | 1.4-2.4 |
+| Loss on open exposure at 10% adverse move | 0.9-1.4 (70-50% hedged) | 1.2-1.9 | 1.4-2.4 |
 | Loss at 10% adverse move, fully unhedged | 2.9 | 3.9 | 4.8 |
 
 All amounts MSEK; 2028 values match strategy A24 and RT-E. Fix after the exposure ledger replaces the 60% assumption.
@@ -234,8 +236,8 @@ All amounts MSEK; 2028 values match strategy A24 and RT-E. Fix after the exposur
 
 | Trigger | Action | Owner |
 |---|---|---|
-| Spot SEK/ZAR moves more than 4% adverse versus the current pricing rate within a quarter | Ad hoc pricing review within 5 working days; update pricing rate for new quotes | CFO / Head of Product |
-| Move more than 8% adverse sustained for 4 weeks | Consider surcharge on unhedged bookings under the clause, subject to legal check; stop publishing new fixed-price departures until repriced | CEO / CFO |
+| Spot SEK/ZAR moves more than 4% adverse versus the spot used when the pricing rate was last set, within a quarter (uses two thirds of the 6% buffer) | Ad hoc pricing review within 5 working days; update pricing rate for new quotes | CFO / Head of Product |
+| Move more than 8% adverse versus that reference spot, sustained for 4 weeks | Consider surcharge on unhedged bookings under the clause, subject to legal check; stop publishing new fixed-price departures until repriced | CEO / CFO |
 | Hedge ratio outside 50-70% for 2 consecutive weeks | Rebalance | CFO |
 | Open exposure above limit | Raise hedge ratio to 70% and review price buffer | CFO |
 | Bank facility headroom below 20% | Escalate to growth council; slow value-added promotions | CFO / CEO |
@@ -244,7 +246,7 @@ All amounts MSEK; 2028 values match strategy A24 and RT-E. Fix after the exposur
 
 - **Pricing rate.** List price uses a pricing FX rate that is 6% adverse to spot (range 5-7%, reviewed quarterly). On spot SEK/ZAR 1.696 (ZAR per SEK) a 6% adverse rate is about 1.594 (0.627 SEK per ZAR). This replaces v1's 3-5% buffer, which was below the 7.5% rand move over 12 months and below the 5-8% used by international operators (R10, strategy 12.4).
 - **Clause.** The contract allows price increases for exchange-rate changes, fuel and taxes; notice at least 20 days before departure with a calculation; the traveller may cancel free if the increase exceeds 8% (Konsumentverket, Paketreselagen 2018:1217; R09, R10). The current terms add a 100 SEK per booking threshold and bar increases in the final 20 days (R10 4.1; terms page last modified 2024-05-03, **verify current text**). Under the EU model the contract should also state the traveller's right to a price reduction if costs fall [VERIFY with Legal: whether our terms and the buffer logic require passing through decreases].
-- **How big a currency move triggers the 8% right?** With 60% foreign-currency share, a price rise of 8% needs about a 13% adverse move on the unhedged part [own arithmetic: 8% / 0.60]. The clause is therefore a backstop for large moves, not a normal repricing tool, and we should expect to rely on the buffer and hedge for normal moves.
+- **How big a currency move triggers the 8% right?** With a 60% foreign-currency share and nothing hedged, an 8% price rise would need about a 13% adverse move across all foreign-currency cost (8% / 0.60), more once the buffer and hedges absorb part of it [own arithmetic]. The clause is therefore a backstop for large moves, not a normal repricing tool, and we should expect to rely on the buffer and hedge for normal moves.
 - **Interim cover.** Until the full terms review (31 Mar 2027), publish 2027 fixed-price departures only on the existing clause, after Legal confirms by 27 Nov 2026 that it is sufficient. A short amendment note covers any gap.
 - **Marketing claim.** No "fast pris" or "valutagaranti" claim until the hedge programme has run for two quarters and CFO/Legal agree the exposure. Option for Gate 2 (30 Jun 2027): a "pris låst vid anmälan" promise on hedged bookings as a conversion driver against Tourcompass's price guarantee; costs the clause's protection on those bookings, so size it before offering.
 
@@ -256,7 +258,7 @@ Dealing spread and bank fees are assumed at 0.3% of hedged notional [A]: about S
 
 ### 9.1 Facts and gaps
 
-Published terms (sydafrikaresor.se/villkor/resevillkor, last modified 2024-05-03, **verify current**): registration fee SEK 3,000 per person within 10 days of confirmation; a further 40% before departure (day count not captured); change fee SEK 200; cancellation SEK 5,000 pp more than 60 days before, 40% at 59-46 days, 75% at 45-31 days, 100% at 30 days or fewer; price increase threshold SEK 100 per booking; no increase in the final 20 days; SRF 2018 general terms (R10 4.1). Peers: Världens Resor SEK 3,500 pp with balance 40 days before; Swanson's SEK 4,500 pp with balance 20 days before (excerpts, verify before use) (R10 4.2). The deposit is about SEK 6,600 per booking, about 6% of the average booking (A24, RT-E). The claim that customer cash arrives before supplier cash is unproven and probably backwards for flights and fixed departures (strategy 12.4, RT-E). Supplier payment schedules are not known.
+Published terms (sydafrikaresor.se/villkor/resevillkor, last modified 2024-05-03, **verify current**): registration fee SEK 3,000 per person within 10 days of confirmation; a further 40% before departure (day count not captured); change fee SEK 200; cancellation SEK 5,000 pp more than 60 days before, 40% at 59-46 days, 75% at 45-31 days, 100% at 30 days or fewer; price increase threshold SEK 100 per booking; no increase in the final 20 days; SRF 2018 general terms (R10 4.1). Peers: Världens Resor SEK 3,500 pp with balance 40 days before; Swanson's SEK 4,500 pp with balance 20 days before (excerpts, verify before use) (R10 4.2). The deposit is about SEK 6,600 per booking (3,000 x 2.2 travellers), about 6% of the average booking (A24, RT-E). Proposal A at SEK 5,000 pp would be about SEK 11,000 per booking, about 11% [own arithmetic]. The claim that customer cash arrives before supplier cash is unproven and probably backwards for flights and fixed departures (strategy 12.4, RT-E). Supplier payment schedules are not known.
 
 ### 9.2 Proposed schedule (options, pending supplier terms and legal review)
 
@@ -274,7 +276,7 @@ Rationale: collect cash no later than it is paid out, reduce the pre-funding pea
 ### 9.3 Testing the deposit change
 
 - Hypothesis: moving to SEK 5,000 pp on guided departures does not change quote-to-booking conversion by more than 2 points.
-- Statistical reality check [own arithmetic, A10]: about 1,950 quotes in 2027 (2,440 enquiries x 80%) split into two arms gives about 975 quotes per arm per year. At a base close rate of 26% the standard error of the difference is about 2.0 points, so a 95% interval is about +/-3.9 points a year and about +/-5.5 points over six months. **The test cannot prove a small effect.** Use it as a guardrail: revert if the new schedule shows more than a 5-point lower close rate over two quarters, or if consultants report deposit objections in more than 15% of lost-deal reasons.
+- Statistical reality check [own arithmetic, A10]: about 1,950 quotes in 2027 (2,440 enquiries x 80%) split into two arms gives about 975 quotes per arm per year. At a base close rate of 26% the standard error of the difference is about 2.0 points, so a 95% interval is about +/-3.9 points a year and about +/-5.5 points over six months. **The test cannot prove a small effect.** It also covers only fixed guided departures (35% of travellers, A23), so the real sample is about 680 quotes a year, about 340 per arm: standard error about 3.4 points, 95% interval about +/-6.7 points a year and about +/-9.5 over six months [own arithmetic]. A 5-point guardrail on close rate is therefore inside the noise. Primary guardrail: share of lost deals citing deposit or payment terms (revert if above 15% in the test arm, or 5 points above control), with close rate as a secondary read and a pooled 12-month review.
 - Method: alternate by week or by consultant cohort; log the lost-reason code; start on fixed guided departures only.
 
 ### 9.4 Interim and full timetable
@@ -302,20 +304,20 @@ Follow the workstream 01 tone: Trygg, Rak. No superlatives, all mandatory costs 
 
 **Early-booking offer (non-price) [draft, legal check]:**
 - Rubrik: "Boka tidigt, få mer av Sydafrika"
-- Brödtext: "Bekräfta din resa före [datum] så ingår [värde, t.ex. en privat Kapstadsdag med guide] utan extra kostnad. Priset är detsamma, du får mer ingående. Erbjudandet gäller utvalda avresor med lediga platser."
-- Villkor: "Erbjudandet gäller avresor markerade med Boka tidigt-symbol, så länge platser finns."
+- Brödtext: "Bekräfta din resa före [datum] så ingår [värde, t.ex. en privat Kapstadsdag med guide] utan extra kostnad. Priset är detsamma, men du får mer i resan. Erbjudandet gäller utvalda avresor så länge det finns lediga platser."
+- Villkor: "Erbjudandet gäller avresor som är markerade med symbolen Boka tidigt, så länge det finns platser kvar."
 
 **Pris och ingår/ingår inte:**
 - "Priset avser per person i delat dubbelrum och inkluderar [flyg: ja/nej], boende, [måltider], guide samt obligatoriska avgifter. Det ingår inte: [lista]."
 
 **Pris och valuta (avsnitt för resevillkor, text ska fastställas av jurist):**
-- "Priset är fastställt i svenska kronor. Vi kan höja priset om våra kostnader ökar på grund av ändrade valutakurser, bränslepriser eller skatter. En prishöjning meddelas senast 20 dagar före avresan tillsammans med beräkningen. Om höjningen överstiger 8 % av resans pris har du rätt att avboka utan kostnad. Om våra kostnader minskar [VERIFY: sänks priset i motsvarande mån]."
+- "Priset anges i svenska kronor. Vi kan höja priset om våra kostnader ökar på grund av ändrade växelkurser, bränslepriser eller skatter. Beskedet om en prishöjning skickas senast 20 dagar före avresan och innehåller vår beräkning. Om höjningen är större än 8 % av resans pris har du rätt att avboka utan avgift. Om våra kostnader minskar har du rätt till en motsvarande prissänkning [VERIFY med jurist]."
 
 **Betalning:**
-- "Efter bekräftelse betalar du en anmälningsavgift om [belopp] kr per person inom 10 dagar. [X] % betalas senast [90-120] dagar före avresan och slutbetalning senast 60 dagar före avresan. Din resa omfattas av resegaranti."
+- "När vi har bekräftat din bokning betalar du en anmälningsavgift på [belopp] kr per person inom 10 dagar. Ytterligare [X] % betalas senast [90-120] dagar före avresan och slutbetalningen senast 60 dagar före avresan. Din resa omfattas av resegaranti."
 
 **Flex-tillägg [pilot, ej godkänd]:**
-- "Med Flex kan du ändra eller avboka fram till 60 dagar före avresa. Kostnad: [3-4] % av resans pris. Läs villkoren."
+- "Med Flex kan du ändra eller avboka fram till 60 dagar före avresan. Flex kostar [3-4] % av resans pris. Läs villkoren."
 
 Not to be used: "Billigast", "bästa pris", "valutagaranti", "störst" (unless substantiated, strategy 6.3); "24/7 lokal närvaro" until costed and staffed; use "jourtelefon under resan".
 
@@ -328,7 +330,7 @@ Not to be used: "Billigast", "bästa pris", "valutagaranti", "störst" (unless s
 | 13 Nov | Kammarkollegiet and bank call: growth forecast, deposit/collection changes, hedge facility concept | CFO |
 | 16 Nov | Competitor price corridor v1 (10 reference itineraries) | Head of Marketing / analyst |
 | 20 Nov | **FX policy approved** (section 8); pricing rate set (6% buffer); margin approval bands live | CFO / CEO |
-| 27 Nov | Legal confirms existing clause sufficient for 2027 fixed-price departures; early-bird offer text cleared | Legal / Ops |
+| 27 Nov | Legal confirms existing clause sufficient for 2027 fixed-price departures; early-bird offer text cleared; interim list of confirmed-held departures delivered | Legal / Ops / Head of Product |
 | 30 Nov | Currency ledger v1 from supplier list; quote calculator mandatory for new proposals | CFO / Head of Product |
 | 1 Dec | Early-booking campaign live for supply-held departures (value-adds, not discounts) | Head of Marketing |
 | 15 Dec | **Gate 0:** margin by product confirmed; 40 MSEK definition; cost-to-serve; first hedge book; repricing list for 2027 | CFO |
@@ -358,6 +360,8 @@ Not to be used: "Billigast", "bästa pris", "valutagaranti", "störst" (unless s
 | of which inside existing strategy lines | 70 | 220 | 140 | |
 | of which new, incremental | 55 | 105 | 75 | |
 
+The Q4 2026 amounts fall outside the 2027-28 columns of strategy 12.1; CFO confirms funding. The new, incremental 0.105 MSEK (2027) and 0.075 MSEK (2028) are not in the strategy incremental-cost table (3.3 / 7.1 MSEK); either absorb them in the marketing measurement line or add them (about 0.1 MSEK against a 2.2 MSEK loss).
+
 Early-bird and promotion value-adds are not a cost line: they sit inside gross margin and are capped at 2% of turnover (0.96 MSEK in 2027, 1.29 MSEK in 2028), planned about 1% (0.48 and 0.64 MSEK) [A]. Fund levy (0.6%) and guarantee costs are in the finance workstream's lines, not here.
 
 ### 13.2 KPIs
@@ -379,6 +383,14 @@ Early-bird and promotion value-adds are not a cost line: they sit inside gross m
 | Revenue per traveller | Total / travellers | 45,000 (2027), 46,000 (2028) | Quarterly |
 | Margin per traveller | Gross profit / travellers | Tracked; no decline | Quarterly |
 | Attach rates | Insurance / extensions / upgrades | 35%->55% / 20%->35% / 15%->25% (R10 [A]) | Quarterly |
+| Quote-to-booking conversion by price tier | Close rate for entry, core, premium, read with the price-position index | No fall of more than 3 points attributable to price moves (T3, repricing, buffer) | Monthly |
+| Margin leakage | Realised margin on departed bookings minus quoted margin | Within -1.0 point [A]; FX variance reported separately | Monthly |
+| Partner post-commission margin | Margin after 8-12% commission on partner-sold bookings | At least 15% (G5); each partner under 10% of turnover | Monthly |
+| Prepaid / at-risk supply | Value of prepaid and non-cancellable supply | Below SEK 4 M (G7) | Weekly |
+| Customer cash vs supplier cash | Customer cash received minus supplier cash paid by departure month; pre-funding peak | Peak inside the cash model (5-12 MSEK planning range [A]); collection no later than supplier payment on fixed departures | Monthly |
+| Release-date compliance | Share of lodge, block-seat and guide releases actioned by deadline | 100% | Weekly |
+| Flex pilot economics | Take-up, fee income, refund cost | Take-up 15-25% [A]; abort if net refund loss above 60% of fees | Monthly in pilot |
+| T3 scarcity tier test | Conversion on affected quotes | Stop if down more than 3 points | Monthly in test |
 | Deposit on time | Deposits paid within 10 days | At least 95% [A] | Monthly |
 | Cancellation rate and retained revenue | By days-before-departure | Baseline in Q4 2026, then target | Monthly |
 
@@ -441,7 +453,7 @@ Early-bird and promotion value-adds are not a cost line: they sit inside gross m
 | P-A12 | Handling cost SEK 483 per hour; 3 h per quote, 8 h per booking | A18, A23 | Time study |
 | P-A13 | Season index shoulder 85-92, green 75-85 versus peak 100 | Judgement | Supplier season rates |
 | P-A14 | Lodges release next-year rates mid-year | Industry norm, unverified | Supplier calendar |
-| P-A15 | Price-monitoring tool cost under SEK 5k per month | Tool pricing unverified | Quote |
+| P-A15 | Price-monitoring tool cost under SEK 3k per month | Tool pricing unverified; fits the SEK 40k line | Quote |
 | P-A16 | Budget amounts in section 13.1 | Planning estimates | Quotes and internal costs |
 
 ## 18. Sources

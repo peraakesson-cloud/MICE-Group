@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- DRAFT: lists the six drafted pages by canonical URL. Live URLs win (WS04 4.1); regenerate from the CMS/crawl after the 30 Nov 2026 sign-off. Do not publish before the pages are live. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://www.sydafrikaresor.se/</loc></url>
+  <url><loc>https://www.sydafrikaresor.se/reseforslag/</loc></url>
+  <url><loc>https://www.sydafrikaresor.se/guide/</loc></url>
+  <url><loc>https://www.sydafrikaresor.se/resmal/safari-kruger/</loc></url>
+  <url><loc>https://www.sydafrikaresor.se/resmal/kapstaden/</loc></url>
+  <url><loc>https://www.sydafrikaresor.se/om-oss/</loc></url>
+</urlset>

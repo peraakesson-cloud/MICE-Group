@@ -331,6 +331,8 @@ v1 counted market growth (L1) as a return on spend. The programme-created turnov
 
 Promotions and value-adds (cap 2% of turnover, G2) sit inside gross margin, not in this table.
 
+**Not in this table (completeness review, 3 Nov 2026):** the workstream plans (22 customer experience, 23 operations, 24 people extras, 25-26 technology and web, 31 legal, 14 sales, 30 contingency) add asks of indicatively 4-5 MSEK in 2027 that are not de-duplicated against this table or the SEK 3.0 M loss budget (`EXECUTIVE-SUMMARY.md` section 4, `ASSUMPTIONS-TO-VALIDATE.md` Part 2). Until the CFO reconciles them by 15 Dec 2026, treat the 3.30 / 7.10 MSEK as a floor and the break-even margin of 23.5% as optimistic.
+
 ### 12.2 Net contribution by gross margin case (incremental gross profit less incremental cost)
 Reference: 20% margin on the 40 MSEK baseline (8.0 MSEK gross profit). Turnover 48.0 (2027) and 64.4 (2028).
 
@@ -365,7 +367,7 @@ No cash-flow model exists. The claim that customer cash arrives before supplier 
 | Hedging | Hedge 50-70% of known supplier payments at confirmation; open exposure 11.6-19.3 MSEK; a 10% adverse move on open exposure costs 1.2-1.9 MSEK, and about 3.9 MSEK if fully unhedged | Cancellations over-hedge; hedge by confirmed bookings only |
 | Price buffer | 6% in list price (range 5-7%) with a legal price-adjustment clause (notice at least 20 days; traveller may cancel above 8%) (R09). v1's 3-5% was below the 7.5% rand move, below 5-8% used by operators and below R10's 4-6% | Quarterly review |
 | Guarantee | Increment on +24.4 MSEK of liable turnover: 1.5 MSEK at 6.25% (rule not in force), 2.4 at 10%, 3.7 at 15%; at 80 MSEK (+40): 2.5 / 4.0 / 6.0 MSEK, possibly cash-collateralised. Current regime and existing level unknown. Prepaid lodge supply must be included in the forecast | Notify growth to Kammarkollegiet **before** the early-booking campaign (13 Nov); unnotified growth sanctionable up to SEK 10 M (R09) |
-| Liquidity line | Committed facility of 10-15 MSEK sized to the shock: a UD warning or Gulf closure with free cancellation of next-90-day departures implies a 10-20 MSEK refund call within weeks while supplier prepayments recover slowly. v1 stress of 10% cancellations was too mild | Hedge and guarantee facilities compete for the same bank credit; negotiate together by 31 Jan 2027 |
+| Liquidity line | Committed facility of 10-15 MSEK sized to the shock: a UD warning or Gulf closure with free cancellation of next-90-day departures implies a 10-20 MSEK refund call within weeks while supplier prepayments recover slowly. v1 stress of 10% cancellations was too mild | Hedge and guarantee facilities compete for the same bank credit; negotiate together by 31 Jan 2027. Workstream 27 sizes 2028 at 16-20 MSEK on its own refund-exposure maths; the CFO settles one range at Gate 0 |
 
 ---
 
@@ -475,7 +477,7 @@ Doubling volume while stretching the team risks complaints. Service metrics are 
 | Q2 2027 | | Agent portal live, first 20 agents; GL2/GL4 pilots running | |
 | 30 Jun 2027 | **Gate 2** | 2027 order book at least 36 MSEK; cumulative net contribution no worse than -3.0 MSEK; L3, L8 versus plan; service metrics; new-product readiness | Scale or cut Tranche B; GL3 go/no-go; 2028 hiring and guarantee limit |
 | Oct 2027 | Resemässan/Seniorfestivalen Stockholm exhibit (SEK 120-250k, gated line) (R12) | | |
-| 31 Oct 2027 | **Gate 3** | 2028 order-book trajectory to 19 MSEK (core) or 24 MSEK (stretch) by 31 Dec; margin at or above 19%; incremental ROAS proven | 2028 budget release (4.6 MSEK; stretch tranche up to 1.0); GL1-GL4 go/no-go; release of 2028 loss budget |
+| 31 Oct 2027 (Sunday; meet Fri 29 Oct) | **Gate 3** | 2028 order-book trajectory to 19 MSEK (core) or 24 MSEK (stretch) by 31 Dec; margin at or above 19%; incremental ROAS proven | 2028 budget release (4.6 MSEK; stretch tranche up to 1.0); GL1-GL4 go/no-go; release of 2028 loss budget |
 | 31 Mar and 30 Jun 2028 | **Gates 4 and 5** | 2028 order books at 32 and 48 MSEK (core) or 40 and 60 (stretch) | Scale winners; EU Directive 2026/1024 re-engineering before transposition (about Sept 2028 [VERIFY]) |
 
 ### 16.3 Governance

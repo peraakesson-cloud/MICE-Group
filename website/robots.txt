@@ -1,0 +1,7 @@
+# PLACEHOLDER - finalise with WS04 before launch
+User-agent: *
+Allow: /
+Disallow: /sok/
+Disallow: /tack/
+# Replace host with the production domain once confirmed
+Sitemap: https://www.sydafrikaresor.se/sitemap.xml
